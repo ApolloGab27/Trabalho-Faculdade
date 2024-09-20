@@ -168,7 +168,7 @@ def criar_interface():
     entry_teste.grid(row=7, column=1, sticky="w")
     entry_teste.bind("<Return>", lambda event: inserir_dados())
     
-    # Botões centralizados
+    # Botões para interface
     Button(janela, text="Adicione um novo aluno", font=("Arial", 15), command=inserir_dados).grid(row=8, column=0, sticky="e", pady=10)
     Button(janela, text="Exclua um dado de um aluno", font=("Arial", 15), command=excluir_dados).grid(row=8, column=1, sticky="w", pady=10)
     Button(janela, text="Aperte para visualizar os dados desta matéria", font=("Arial", 15), command=visualizar_dados).grid(row=9, column=0, columnspan=2, pady=10)
